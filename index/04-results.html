@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Results</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu-style2.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-toggle.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/04-results.css">
+	<script type="text/javascript" src="../js/04-results.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-toggle.min.js"></script>
+</head>
+
+</head>
+<body>
+<!-- start head + menu -->
+	<div id="header-menu">
+		<!-- start head -->
+		<header>
+				<nav class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header" >
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#" ><i class="fa fa-subway" aria-hidden="true"></i><span>BOOK</span><p>YOUR</p><span>TRAIN</span></a>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav navbar-right" id="menu-12">
+								<li><a href="#">Sign Up</a></li>
+								<li><a href="#">Login</a></li>
+							</ul>
+							<div id="menu-2">
+								<ul class="nav navbar-nav" id="menu-21">
+									<li><a href="#" id="home-li">Home</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Gallery</a></li>
+									<li class="dropdown" id="page">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Home</a></li>
+											<li id="blog0">
+												<a href="#">Blog<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+												<ul id="blog">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Something else here</a></li>
+													<li><a href="#">Separated link</a></li>
+												</ul>
+											</li>
+											<li id="blog1">
+												<a href="#">Blog <b class="caret"></b></a>
+												<ul id="blog11">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Something else here</a></li>
+													<li><a href="#">Separated link</a></li>
+												</ul>
+											</li>
+											<li id="gallery0">
+												<a href="#">Gallery<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+												<ul id="gallery">
+													<li><a href="#">2 Cols</a></li>
+													<li><a href="#">3 Cols</a></li>
+													<li><a href="#">4 Cols</a></li>
+												</ul>
+											</li>
+											<li id="gallery1">
+												<a href="#" >Gallery <b class="caret"></b></a>
+												<ul id="gallery11">
+													<li><a href="#">2 Cols</a></li>
+													<li><a href="#">3 Cols</a></li>
+													<li><a href="#">4 Cols</a></li>
+												</ul>
+											</li>
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="#">Search Ticket</a></li>
+											<li><a href="#">User Setting</a></li>
+											<li><a href="#">Shortcodes</a></li>
+											<li><a href="#">404 page</a></li>
+										</ul>
+									</li>
+									<li><a href="#">About</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li class="dropdown" id="usd">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">USD <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</li>
+									<li class="dropdown" id="bn">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="bn-li">BN <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							
+						</div><!-- /.navbar-collapse -->
+				</nav>
+		</header>
+		<!-- end head -->
+		<div id="menu">
+			<div class="container">
+				<div class="col-xs-12 ">
+					<fieldset>
+						<form>
+							<div class="row form-group">
+								
+								<div class="row col-md-4">
+									<label class="col-xs-12">Travelling Route</label>
+									<div class="col-xs-12 col-sm-5 address" >
+										<div class="input-group">
+									      <input type="text" class="form-control" placeholder="From">
+									      <span class="input-group-btn">
+									        <button class="btn btn-default" type="button"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+									      </span>
+									    </div>
+									</div>
+									<div class="col-xs-12 col-sm-2" id="refresh">
+										<button type="button" class="btn"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+									</div>
+									<div class="col-xs-12 col-sm-5 address" >
+										<div class="input-group">
+									      <input type="text" class="form-control" placeholder="To">
+									      <span class="input-group-btn">
+									        <button class="btn btn-default" type="button"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+									      </span>
+									    </div>
+									</div>
+								</div>
+								
+								<div class="row col-md-4">
+									<label class="col-xs-12">Travelling Date</label>	       
+									 <div class='col-xs-12 col-sm-6'>
+							            <div class="form-group">
+							                <div class='input-group date' id='datetimepicker1'>
+							                    <input type='text' class="form-control" placeholder="MM-DD-YYYY" />
+							                    <span class="input-group-addon"><span  class="glyphicon glyphicon-calendar"></span>
+							                    </span>
+							                </div>
+							            </div>
+							        </div>
+							        <div class='col-xs-12 col-sm-6'>
+							            <div class="form-group">
+							                <div class='input-group date' id='datetimepicker1'>
+							                    <input type='text' class="form-control" placeholder="One Way" />
+							                    <span class="input-group-addon"><span  class="glyphicon glyphicon-calendar"></span>
+							                    </span>
+							                </div>
+							            </div>
+							        </div>
+								    
+								</div>
+								
+								<div class="row col-md-4">
+									<label class="col-xs-12">Travelling Persons</label>
+									<div class="col-xs-12 col-sm-6">
+										<select class="form-control">
+										  <option>Adult</option>
+										  <option>1 Adult</option>
+										  <option>2 Adult</option>
+										  <option>3 Adult</option>
+										  <option>4 Adult</option>
+										</select>
+									</div>
+									
+									<div class="col-xs-12 col-sm-6">
+										<select class="form-control">
+										  <option>0 Child</option>
+										  <option>1 Child</option>
+										  <option>2 Child</option>
+										  <option>3 Child</option>
+										  <option>4 Child</option> 
+										</select>
+									</div>
+								</div>
+							</div>
+							
+							<button type="button" class="btn btn-lg">SEARCH TICKETS</button>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- end head + menu -->
+<!-- start content -->
+	<div>
+		<div class="step-panel">
+			<div class="panel-menu1 panel-hide show"><img src="../images/step1.png"></div>
+			<div class="panel-menu2 panel-hide"><img src="../images/step2.png"></div>
+			<div class="panel-menu3 panel-hide"><img src="../images/step3.png"></div>
+			<div class="panel-menu4 panel-hide"><img src="../images/step4.png"></div>
+		</div>
+		<div class="container">
+			<div class="row step1 show">
+				<div class="left-panel col-sm-3 col-xs-12">
+					<div id="filter-by" class="row">
+						<div id="title">Filter by</div>
+						<div id="check">
+							<p>Coach time</p>
+							<div class="checkbox">
+							  <button type="button" class="btn btn-xs btn-secondary btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+						        <div class="handle"></div>
+						      </button>
+						      Third class sleeping
+							</div>
+							<div class="checkbox">
+							    <button type="button" class="btn btn-xs btn-secondary btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+						        <div class="handle"></div>
+						      </button>
+							   	Second class sleeping							  
+							</div>
+							<div class="checkbox">							  
+							    <button type="button" class="btn btn-xs btn-secondary btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+						        <div class="handle"></div>
+						      </button>
+							    First class sleepng							  
+							</div>
+							<div class="checkbox">
+							  
+							    <button type="button" class="btn btn-xs btn-secondary btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+						        <div class="handle"></div>
+						      </button>
+							    Comfortable							  
+							</div>
+							<div class="checkbox">
+							  
+							    <button type="button" class="btn btn-xs btn-secondary btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+						        <div class="handle"></div>
+						      </button>
+							    Third class non reserve							  
+							</div>
+							<div class="checkbox">
+							  
+							    <button type="button" class="btn btn-xs btn-secondary btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+						        <div class="handle"></div>
+						      </button>
+							    Sedentary carri							  
+							</div>
+							<div class="checkbox">							  
+							    <button type="button" class="btn btn-xs btn-secondary btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+						        <div class="handle"></div>
+						      </button>
+							    All							  
+							</div>
+							<p>Departure/Arrive time</p>
+							<!-- <div>
+								<input id="ex14" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]' ticks_positions="[0, 30, 60, 70, 90, 100]" />
+							</div> -->
+						</div>
+					</div>
+					<div id="recent-ticket">
+						<div id="title">Recent tickets</div>
+						<div class="box-recent-tickets row">
+							<div class="col-xs-6 box-recent-tickets-left">
+								<h4>New York</h4>
+								<span>penn Station,NY</span>
+								<p></p>
+							</div>
+							<!-- <div class="col-xs-1">
+								
+							</div> -->
+							<div class="col-xs-6 box-recent-tickets-right">
+								<h4>Lost Angeles</h4>
+								<span>Union Station,CA</span>
+								<!-- <p>from<span>$48</span></p> -->
+							</div>
+							<div class="col-xs-12" style="padding: 10px 5%;">
+								<div class="col-xs-6" style="text-align: left;padding: 0;">
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+								</div>
+								<div class="col-xs-6" style="text-align: right;padding: 0">
+									from<span style="color: orange; font-size: 18px;">$48</span></div>
+							</div>
+						</div>
+						<div class="box-recent-tickets row">
+							<div class="col-xs-6 box-recent-tickets-left">
+								<h4>Paris</h4>
+								<span>Gare Saint,Lazare</span>
+								<p></p>
+							</div>
+							<!-- <div class="col-xs-1">
+								
+							</div> -->
+							<div class="col-xs-6 box-recent-tickets-right">
+								<h4>London</h4>
+								<span>Paddington Station</span>
+								<!-- <p>from<span>$48</span></p> -->
+							</div>
+							<div class="col-xs-12" style="padding: 10px 5%;">
+								<div class="col-xs-6" style="text-align: left;padding: 0;">
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+								</div>
+								<div class="col-xs-6" style="text-align: right;padding: 0">
+									from<span style="color: orange; font-size: 18px;">$72</span></div>
+							</div>
+						</div>
+						<div class="box-recent-tickets row">
+							<div class="col-xs-6 box-recent-tickets-left">
+								<h4>New York</h4>
+								<span>penn Station,NY</span>
+								<p></p>
+							</div>
+						
+							<div class="col-xs-6 box-recent-tickets-right">
+								<h4>Lost Angeles</h4>
+								<span>Union Station,CA</span>
+								<!-- <p>from<span>$48</span></p> -->
+							</div>
+							<div class="col-xs-12" style="padding: 10px 5%;">
+								<div class="col-xs-6" style="text-align: left;padding: 0;">
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+								</div>
+								<div class="col-xs-6" style="text-align: right;padding: 0">
+									from<span style="color: orange; font-size: 18px;">$36</span></div>
+							</div>
+						</div>
+					</div>
+					<div id="recent-posts">
+						<p>Recent Posts</p>
+						<div class="box-recent-posts ">
+							<div class="box-recent-posts-img ">
+								<div>
+									<img src="../images/26.jpg" width="75px" height="75px">
+									<div class="hover">
+										<i class="fa fa-search-plus" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="box-recent-posts-text">
+								<p>Lorem ipsum </p>
+								<span>1 day ago</span>
+							</div>
+						</div>
+						<div class="box-recent-posts ">
+							<div class="box-recent-posts-img ">
+								<div>
+									<img src="../images/25.jpg" width="75px" height="75px">
+									<div class="hover">
+										<i class="fa fa-search-plus" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="box-recent-posts-text">
+								<p>Lorem ipsum</p>
+								<span>1 day ago</span>
+							</div>
+						</div>
+						<div class="box-recent-posts ">
+							<div class="box-recent-posts-img ">
+								<div>
+									<img src="../images/27.jpg" width="75px" height="75px">
+									<div class="hover">
+										<i class="fa fa-search-plus" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="box-recent-posts-text">
+								<p>Lorem ipsum </p>
+								<span>1 day ago</span>
+							</div>
+						</div>
+						
+						<div class="box-recent-posts"></div>
+					</div>
+				</div>
+				<div class="list-tickets col-sm-9 col-xs-12">
+					<div id="sort">
+						<span id="left">10 of 12 found</span>
+						<div class="dropdown">
+						  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+						    Show 5 tickets on page <span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						    <li><a href="#">Show 5 tickets on page</a></li>
+						    <li><a href="#">Show 10 tickets on page</a></li>
+						    <li><a href="#">Show 15 tickets on page</a></li>
+						  </ul>
+						</div>
+						<div class="dropdown">
+						  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+						    Sort by time <span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						    <li><a href="#">Today</a></li>
+						    <li><a href="#">Tomorrow</a></li>
+						    <li><a href="#">1 Week</a></li>
+						  </ul>
+						</div>
+					</div>
+					<div >
+						
+						<div class="box-list-tickets">
+							<div class="col-xs-2 img">
+								<img src="../images/train1.png" width="100%">
+							</div>
+							<div class="col-xs-8">
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>8:30p</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>2:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>8:30p</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>2:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-2 buy">
+								<p><span class="cost">$38</span><span>/person</span></p>
+								<span>
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+									<i class="fa fa-rocket" aria-hidden="true"></i>
+								</span>
+								<br>
+								<button type="button" class="btn btn-primary">Buy now</button>
+							</div>
+						</div>
+						<div class="box-list-tickets">
+							<div class="col-xs-2 img">
+								<img src="../images/train2.png" width="100%">
+							</div>
+							<div class="col-xs-8">
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>12:30p</h3>
+										<span>Fed 18 THU</span>
+										<h5>New York</h5>
+										<span>Penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>3:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-2 buy">
+								<p><span class="cost">$59</span><span>/person</span></p>
+								<span>
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+								</span>
+								<br>
+								<button type="button" class="btn btn-primary">Buy now</button>
+							</div>
+						</div>
+						<div class="box-list-tickets">
+							<div class="col-xs-2 img">
+								<img src="../images/train3.png" width="100%">
+							</div>
+							<div class="col-xs-8">
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>22:45</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>14:34</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>15:20</h3>
+										<span>Fed 18 THU</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>21:15</h3>
+										<span>Fed 19 THU</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-2 buy">
+								<p><span class="cost">$22</span><span>/person</span></p>
+								<span>
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+								</span>
+								<br>
+								<button type="button" class="btn btn-primary">Buy now</button>
+							</div>
+						</div>
+						<div class="box-list-tickets">
+							<div class="col-xs-2 img">
+								<img src="../images/train4.png" width="100%">
+							</div>
+							<div class="col-xs-8">
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>22:45</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>Penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>14:34</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-2 buy">
+								<p><span class="cost">$78</span><span>/person</span></p>
+								<span>
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+								</span>
+								<br>
+								<button type="button" class="btn btn-primary">Buy now</button>
+							</div>
+						</div>
+						<div class="box-list-tickets">
+							<div class="col-xs-2 img">
+								<img src="../images/train1.png" >
+								<img src="../images/train2.png">
+							</div>
+							<div class="col-xs-8">
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>8:30p</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>2:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+								<div class="col-xs-12" style="margin-top: 40px;">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>8:30p</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>2:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-2 buy">
+								<p><span class="cost">$38</span><span>/person</span></p>
+								<span>
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+									<i class="fa fa-rocket" aria-hidden="true"></i>
+								</span>
+								<br>
+								<button type="button" class="btn btn-primary">Buy now</button>
+							</div>
+						</div>
+						<div class="box-list-tickets">
+							<div class="col-xs-2 img">
+								<img src="../images/train1.png" width="100%">
+							</div>
+							<div class="col-xs-8">
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>8:30p</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>2:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>8:30p</h3>
+										<span>Fed 14 SUN</span>
+										<h5>New York</h5>
+										<span>penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>2:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-2 buy">
+								<p><span class="cost">$38</span><span>/person</span></p>
+								<span>
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+									<i class="fa fa-coffee" aria-hidden="true"></i>
+									<i class="fa fa-rocket" aria-hidden="true"></i>
+								</span>
+								<br>
+								<button type="button" class="btn btn-primary">Buy now</button>
+							</div>
+						</div>
+						<div class="box-list-tickets">
+							<div class="col-xs-2 img">
+								<img src="../images/train2.png" width="100%">
+							</div>
+							<div class="col-xs-8">
+								<div class="col-xs-12">
+									<div class="col-xs-5 box-recent-tickets-left">
+										<h3>12:30p</h3>
+										<span>Fed 18 THU</span>
+										<h5>New York</h5>
+										<span>Penn Station,NY</span>
+										<p></p>
+									</div>
+									<div class="col-xs-2 arrow" >
+										<p><span>07:25</span></p>
+										<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</div>
+									<div class="col-xs-5 box-recent-tickets-right">
+										<h3>3:50a</h3>
+										<span>Fed 15 SUN</span>
+										<h5>Lost Angeles</h5>
+										<span>Union Station,CA</span>
+										<!-- <p>from<span>$48</span></p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-2 buy">
+								<p><span class="cost">$59</span><span>/person</span></p>
+								<span>
+									<i class="fa fa-wifi" aria-hidden="true"></i>
+									<i class="fa fa-moon-o" aria-hidden="true"></i>
+								</span>
+								<br>
+								<button type="button" class="btn btn-primary">Buy now</button>
+							</div>
+						</div>
+						<div id="pagination">
+							<ul class="pagination">
+							  <li><a href="#">&laquo;</a></li>
+							  <li><a href="#" class="now">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row step2" style="min-height: 1000px;width: 100%;border: 1px solid blue">
+				<div class="col-xs-12 col-sm-3 panel-left">
+					<div class="summary"><p>Summary</p></div>
+					<div class="summary-there">
+						<div class="row">
+							<div class="col-xs-5">There</div>
+							<div class="col-xs-2"></div>
+							<div class="col-xs-5">
+								<i class="fa fa-minus-square-o" aria-hidden="true"  data-toggle="collapse" data-target="#demo"></i>
+							</div>
+						</div>
+						<div id="demo" class="collapse in">
+							<div class="row">
+								<div class="col-xs-5">
+									<span>Train<br>Name</span>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-5">
+									<p>048A<br>North Express</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-5">
+									<p>8:30p</p>
+									<span>Feb 12 MON</span>
+								</div>
+								<div class="col-xs-2">
+									<p>8:20</p>
+								</div>
+								<div class="col-xs-5">
+									<p>4:15p</p>
+									<span>Feb 13 TUE</span>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div id="summary-back"></div>
+					<div id="summary-passenger"></div>
+					<div id="summary-baggare"></div>
+					<div id="summary-total"></div>
+				</div>
+				<div class="col-xs-12 col-sm-9"></div>
+			</div>
+		</div>
+	</div>
+<!-- end content -->
+<!-- start footer -->
+	<footer>
+		<div class="container">
+			<div>
+				<div class="row">
+					<div class="hidden-xs col-sm-3 ">
+						<div class="thumbnail">
+							<h4>Menu</h4>
+							<ul>
+								<li><a>Press Centre</a></li>
+								<li><a>Travel News</a></li>
+								<li><a>Privacy Policy</a></li>
+								<li><a>Best Price Guarantee</a></li>
+								<li><a>About Us</a></li>
+								<li><a>Contacts</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="thumbnail" id="thumbnail2">
+							<h4>Contact Us</h4>
+							<table>
+								<tr>
+									<td><i class="fa fa-phone-square" aria-hidden="true"></td>
+									<td><a href="#">+444 5533 8866</a></span></</td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-skype" aria-hidden="true"></td>
+									<td><a href="#">book.yourtrain</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-envelope" aria-hidden="true"></td>
+									<td><a href="#">mail@bookyourtrain.com</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-map-marker" aria-hidden="true"></td>
+									<td><a href="#">5138 Little Shadow Gardens,Del Monte,Alaska,99631-4129</a></td>
+								</tr>
+							</table>
+					</div>
+					</div>
+					<div class="hidden-xs col-sm-3 ">
+						<div class="thumbnail " id="thumbnail3">
+							<h4>Blog Post</h4>
+							<table>
+								<tr>
+									<th><div class="img">
+										<img src="../images/27.jpg" style="max-width: 100%;max-height: 100%">
+									</div></th>
+									<th>Lorem ipsum dolor sit amet<br><span>7 days ago</span></th>
+								</tr>
+								<tr>
+									<th><div class="img">
+										<img src="../images/19.jpg" style="max-width: 100%;max-height: 100%">
+									</div></th>
+									<th>Lorem ipsum dolor sit amet<br><span>247 days ago</span></th>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 ">
+						<div class="thumbnail " id="thumbnail4">
+							<h4>Subcribe</h4>
+							<span>Be aware of news</span>
+							<form>
+								<input type="email" name="" placeholder="Your e-mail">
+								<button type="button" class="btn btn-xs">Send</button>
+							</form>
+							<h4>Follow Us</h4>
+							<div>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-google-plus" aria-hidden="true"></i>
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<hr>
+			<div id="ff">
+				<div id="ff-left"><a href="#" ><i class="fa fa-subway" aria-hidden="true"></i><span>BOOK</span><p>YOUR</p><span>TRAIN</span></a></div>
+				<div id="ff-right">@2015BESTWEBSOFT</div>
+			</div>
+		</div>
+	</footer>
+<!-- end footer -->
+	<script type="text/javascript">
+		 $(function () {
+			   var bindDatePicker = function() {
+					$(".date").datetimepicker({
+			        // format:'YYYY-MM-DD',
+			        format:'MM-DD-YYYY',
+						icons: {
+							time: "fa fa-clock-o",
+							date: "fa fa-calendar",
+							up: "fa fa-arrow-up",
+							down: "fa fa-arrow-down"
+						}
+					}).find('input:first').on("blur",function () {
+						// check if the date is correct. We can accept dd-mm-yyyy and yyyy-mm-dd.
+						// update the format if it's yyyy-mm-dd
+						var date = parseDate($(this).val());
+
+						if (! isValidDate(date)) {
+							//create date based on momentjs (we have that)
+							date = moment().format('MM-DD-YYYY');
+						}
+
+						$(this).val(date);
+					});
+				}
+			   
+			   var isValidDate = function(value, format) {
+					format = format || false;
+					// lets parse the date to the best of our knowledge
+					if (format) {
+						value = parseDate(value);
+					}
+
+					var timestamp = Date.parse(value);
+
+					return isNaN(timestamp) == false;
+			   }
+			   
+			   var parseDate = function(value) {
+					var m = value.match(/^(\d{1,2})(\/|-)?(\d{1,2})(\/|-)?(\d{4})$/);
+					if (m)
+						value = m[5] + '-' + ("00" + m[3]).slice(-2) + '-' + ("00" + m[1]).slice(-2);
+
+					return value;
+			   }
+			   
+			   bindDatePicker();
+			 });
+		 $(function(){
+		 	var x=
+		 	$('#refresh').click(function(){
+
+		 	})
+		 })
+		 $(function(){
+		 	// With JQuery
+			$("#ex14").slider({
+			    ticks: [0, 100, 200, 300, 400],
+			    ticks_positions: [0, 30, 60, 70, 90, 100],
+			    ticks_labels: ['$0', '$100', '$200', '$300', '$400'],
+			    ticks_snap_bounds: 30
+			});
+
+			// Without JQuery
+			// var slider = new Slider("#ex14", {
+			//     ticks: [0, 100, 200, 300, 400],
+			//     ticks_positions: [0, 30, 60, 70, 90, 100],
+			//     ticks_labels: ['$0', '$100', '$200', '$300', '$400'],
+			//     ticks_snap_bounds: 30
+			// });
+		 })
+	</script>
+</body>
+</html>

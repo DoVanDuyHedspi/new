@@ -1,0 +1,14 @@
+$(function(){
+	$('.box-list-tickets').mouseenter(function(){
+		$(this).find('button').show();
+	})
+	$('.box-list-tickets').mouseleave(function(){
+		$(this).find('button').hide();
+	})
+	$('.box-list-tickets').find('button').click(function(){
+			$('.step2').addClass('show');
+			$('.step1').removeClass('show');
+			$('.panel-menu2').addClass('show');
+			$('.panel-menu1').removeClass('show');
+		});
+	})
